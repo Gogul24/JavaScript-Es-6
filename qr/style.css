@@ -1,0 +1,19 @@
+body{
+    align-items: center;
+    background-color: black;
+}
+
+.card{
+    width: 90%;
+    max-width: 470px;
+    background: linear-gradient(135deg,#e8fa44,#e3e4de);
+    color: #fff;
+    margin: 100px auto 0;
+    border-radius: 20px;
+    padding: 40px 35px;
+    text-align: center;
+    color:black;
+    font-size: 20px;
+    font-family: cursive;
+}
+

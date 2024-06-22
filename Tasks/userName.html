@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UserName</title>
+    <style>
+        div {
+            display: grid;
+            padding: 10px 0;
+            max-width: 300px;
+        }   
+    </style>
+</head>
+<body>
+    <form action="">        
+        <div>Name <input type="text" placeholder="enter a valid email" id="name"></div>
+        <div>Password <input type="text" placeholder="should be <= 8 characters" id="pass"></div>
+        <div>Retype Password <input type="text" placeholder="retype password" id="rePass"></div>
+        <button type="button" onclick="validate()">Submit</button>
+    </form>
+
+    <script>
+        function validate() {
+            const name = document.getElementById('name').value;
+            const pass = document.getElementById('pass').value;
+            const rePass = document.getElementById('rePass').value;
+
+            if (name === null || name.trim() === '') {
+                alert("Please enter a valid Name");
+                return false;
+            }
+
+            if (pass !== rePass) {
+                alert("Retyped password mismatched");
+                return false;
+            }
+
+            // Redirect to success page upon successful validation
+            window.location.href = 'success.html';
+            return true;
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,89 @@
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 18px;
+    background-color: #2793d2;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.inputContainer {
+    box-shadow:0 4px 8px 0 rgba(0, 0, 0, 0.9),0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    width: 600px;
+    padding: 15px;
+    border: 5px solid rgba(0, 0, 0, .3);
+    border-radius: 15px;
+    background-color: #fff;
+}
+
+.inputContainer .inputRow {
+    margin-block-end: 12px;
+}
+
+.inputContainer input:not([type="submit"]) {
+    width: 100%;
+    height: 50px;
+    padding: 10px 15px;
+    border: 0;
+    border-radius: 5px;
+    margin: 0 0 3px;
+    outline: 0;
+    transition: all 0.5s cubic-bezier();
+    background-color: #d6d6d6;
+    color: #000;
+}
+
+.inputContainer textarea {
+    height: 100px;
+    width: 100%;
+    padding: 10px 15px;
+    border: 0;
+    border-radius: 5px;
+    margin: 0 0 3px;
+    outline: 0;
+    resize: none;
+    background-color: #d6d6d6;
+    color: #000;
+}
+
+.inputContainer input:not([type="submit"]):focus,
+.inputContainer textarea:focus {
+    border-color: #2793d2;
+}
+
+.inputContainer [type="submit"] {
+    height: 50px;
+    padding: 10px 30px;
+    border: 0;
+    border-radius: 5px;
+    font-size: 1.3rem;
+    line-height: 2rem;
+    text-align: center;
+    text-transform: uppercase;
+    cursor: pointer;
+    background-color: #2793d2;
+    color: #fff;
+    transition: all 0.5s cubic-bezier();
+}
+
+.inputContainer [type="submit"]:hover {
+    background-color: #212670;
+}
+
+label.error{
+    font-weight: 700;
+    display: block;
+    color: red;
+    font-size: 12px;
+}

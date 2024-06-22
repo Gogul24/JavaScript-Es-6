@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Map</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="card">
+        <div class="search">
+            <input type="text" name="" id="start" placeholder="Enter your location" spellcheck="false">
+        </div>
+        <div class="search2">
+            <input type="text" name="" id="end" placeholder="Enter your destination" spellcheck="false">
+        </div>
+        <div>
+            <button>
+                <img src="search.png" alt="search icon" onclick="searchRoute()"> 
+            </button>
+        </div>
+        <div id="map">
+
+        </div>
+    </div>
+    <script>
+        let map;
+        function searchRoute(){
+            let start = document.getElementById("start").value;
+            let end = document.getElementById("end").value;
+
+            const apiURL = "https://api.protomaps.com/tiles/v3.json?key=MY_KEY"
+            const apiKey = "bfb5082decd83444"
+        }
+    </script>
+</body>
+</html>
